@@ -47,10 +47,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/Paulo301/clickbeard_paulo_victor.git
+$ git clone https://github.com/Paulo301/cart-test.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd clickbeard_paulo_victor
+$ cd cart-test
 
 # Instale as dependências
 $ yarn install
@@ -72,7 +72,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[TypeScript](https://www.typescriptlang.org/)**
 -   **[Styled Components](https://styled-components.com/)**
 
-> Veja o arquivo  [package.json](https://github.com/Paulo301/clickbeard_paulo_victor/blob/main/package.json)
+> Veja o arquivo  [package.json](https://github.com/Paulo301/cart-test/blob/main/package.json)
 
 #### **Utilitários**
 
