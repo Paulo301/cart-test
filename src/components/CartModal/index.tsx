@@ -10,7 +10,7 @@ import dataAboveTen from "../../assets/acima-10-reais.json";
 import { Divider } from '../Divider';
 import { Button } from '../Button';
 
-import { Container, Content, Items, Total } from './styles';
+import { Container, Content, Items, Total, FreeDeliveryFee } from './styles';
 import { handlePrice } from '../../utils/handlePrice';
 import { CartItem } from './CartItem';
 
@@ -30,7 +30,8 @@ export default function CartModal(props: CartModalProps) {
   const [cartData, setCartData] = useState(isWithFee ? dataBelowTen : dataAboveTen);
 
   useEffect(() => {
-    setCartData(isWithFee ? dataBelowTen : dataAboveTen);
+    const tempData = isWithFee ? dataBelowTen : dataAboveTen;
+    setCartData(tempData);
   }, [isWithFee]);
 
   return (
@@ -72,9 +73,17 @@ export default function CartModal(props: CartModalProps) {
           <Total>
             <strong>Total</strong>
             <strong>
-              {handlePrice(cartData.totalizers.find((item) => item.id === "Items")?.value || 0)}
+              {handlePrice(cartData.value)}
             </strong>
           </Total>
+
+          {
+            cartData.value > 1000 && (
+              <FreeDeliveryFee>
+                <p>Parabéns, sua compra tem frete grátis !</p>
+              </FreeDeliveryFee>
+            )
+          }
         </Content>
 
         <Divider />

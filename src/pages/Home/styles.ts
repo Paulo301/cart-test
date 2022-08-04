@@ -17,7 +17,7 @@ export const Container = styled.main`
     align-items: center;
     justify-content: center;
 
-    background: var(--green);
+    background: var(--middle-green);
     margin: auto;
     width: 18.75rem;
     height: 18.75rem;
@@ -25,13 +25,20 @@ export const Container = styled.main`
     border-radius: 0.75rem;
     border: 1px solid var(--grey);
 
-    div {
+    & > div {
       display: flex;
+      flex-direction: column;
 
-      align-items: center;
+      justify-content: flex-start;
 
-      label {
-        margin-left: 0.5rem;
+      div {
+        display: flex;
+
+        align-items: center;
+
+        label {
+          margin-left: 0.5rem;
+        }
       }
     }
 

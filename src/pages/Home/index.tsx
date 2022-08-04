@@ -26,26 +26,28 @@ export function Home() {
         <p>Escolha o modo do carrinho:</p>
 
         <div>
-          <input 
-            type="radio" 
-            id="without-fee" 
-            name="cart-mode" 
-            value="without-fee"
-            checked={cartMode === 'without-fee'}
-            onChange={onChangeCartMode}
-          />
-          <label htmlFor="without-fee">Sem frete</label>
-        </div>
-        <div>
-          <input 
-            type="radio" 
-            id="with-fee" 
-            name="cart-mode" 
-            value="with-fee"
-            checked={cartMode === 'with-fee'}
-            onChange={onChangeCartMode}
-          />
-          <label htmlFor="with-fee">Com frete</label>
+          <div>
+            <input 
+              type="radio" 
+              id="without-fee" 
+              name="cart-mode" 
+              value="without-fee"
+              checked={cartMode === 'without-fee'}
+              onChange={onChangeCartMode}
+            />
+            <label htmlFor="without-fee">Sem frete</label>
+          </div>
+          <div>
+            <input 
+              type="radio" 
+              id="with-fee" 
+              name="cart-mode" 
+              value="with-fee"
+              checked={cartMode === 'with-fee'}
+              onChange={onChangeCartMode}
+            />
+            <label htmlFor="with-fee">Com frete</label>
+          </div>
         </div>
         
         <Button onClick={handleOpenCartModal}>Abrir carrinho</Button>

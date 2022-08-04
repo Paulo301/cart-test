@@ -66,3 +66,17 @@ export const Total = styled.div`
     color: var(--text-body);
   }
 `;
+
+export const FreeDeliveryFee = styled.div`
+  background: var(--light-green);
+
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+  
+  p {
+    color: var(--green);
+
+    font-size: 1rem;
+  }
+`;
