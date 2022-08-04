@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --green: #33cc95;
     --light-green: #c7ffa6;
     --grey: #a5a5a5;
+    --white: #ffffff;
 
     --text-title: #000000;
     --text-body: #000000;
@@ -28,11 +29,21 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 720px){
       font-size: 87.5%;
     }
+
+    scroll-behavior: smooth;
+    height: 100%;
   }
 
   body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
+    height: 100%;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   body, input, textarea, button {
