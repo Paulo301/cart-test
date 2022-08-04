@@ -48,11 +48,11 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, button {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   button {
@@ -82,9 +82,9 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 576px;
     background: var(--background);
-    padding: 3rem;
+    padding: 0;
     position: relative;
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
   }
 
   .react-modal-close {

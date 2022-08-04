@@ -5,14 +5,14 @@ interface ContainerProps {
 }
 
 export const Container = styled.button<ContainerProps>`
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: 0;
 
   background: var(--blue);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 
   color: ${(props) => props.textColor || 'var(--white)'};
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
 
   transition: filter 0.2s;
